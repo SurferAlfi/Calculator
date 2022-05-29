@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Egyszerű számológép</title>
+</head>
+<body>
+<p><b>Egyszerű számológép</b></p>
+<form name="szamol">
+<input name="egy"><br>
+<input type="button" value=" + " onclick="plusz()">
+<input type="button" value=" - " onclick="minusz()">
+<input type="button" value=" * " onclick="szorzás()">
+<input type="button" value=" / " onclick="osztás()">
+<input name="ketto"><p>
+Eredmény: <input name="eredmeny"></p>
+</form>
+<script>
+function plusz() {
+document.szamol.eredmeny.value = document.szamol.egy.value *1 + document.szamol.ketto.value *1;
+}
+function minusz(){
+document.szamol.eredmeny.value = document.szamol.egy.value - document.szamol.ketto.value;
+}
+function szorzás(){
+document.szamol.eredmeny.value = document.szamol.egy.value * document.szamol.ketto.value;
+}
+function osztás(){
+document.szamol.eredmeny.value = document.szamol.egy.value / document.szamol.ketto.value;
+}
+</script>
+</body>
+</html>
